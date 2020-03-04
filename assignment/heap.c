@@ -17,6 +17,7 @@ int main(){
     }
     printf("\n");
     int* heap = build_heap(num, index);
+    bigHeap(heap, 0);
     sortarr(heap, num, index);
     for(x = 0; x < index; x++){
     }

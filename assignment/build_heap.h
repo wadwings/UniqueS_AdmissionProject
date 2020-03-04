@@ -13,31 +13,31 @@ void swap(int *arr, int x, int y){
 }
 
 void swap_big(int *arr, int index){
-    if(index*2 + 1 < end__heap&&arr[index] < arr[index*2 + 1])swap(arr, index, index*2 + 1);
-    if(index*2 + 2 < end__heap&&arr[index] < arr[index*2 + 2])swap(arr, index, index*2 + 2);
+    if((index + 1)*2 < end__heap&&arr[index] < arr[(index + 1)*2])swap(arr, index, (index + 1)*2);
+    if((index + 1)*2 + 1 < end__heap&&arr[index] < arr[(index + 1)*2 + 1])swap(arr, index, (index + 1)*2 + 1);
 }
 
 void swap_small(int *arr, int index){
-    if(index*2 + 1 < end__heap&&arr[index] > arr[index*2 + 1])swap(arr, index, index*2 + 1);
-    if(index*2 + 2 < end__heap&&arr[index] > arr[index*2 + 2])swap(arr, index, index*2 + 2);
+    if((index + 1)*2 < end__heap&&arr[index] > arr[(index + 1)*2])swap(arr, index, (index + 1)*2);
+    if((index + 1)*2 + 1 < end__heap&&arr[index] > arr[(index + 1)*2 + 1])swap(arr, index, (index + 1)*2 + 1);
 }
 
 void bigHeap(int *arr, int index){
     __small = 0;
-    if(index*2 + 1 < end__heap)bigHeap(arr, index*2 + 1);
-    if(index*2 + 2 < end__heap)bigHeap(arr, index*2 + 2);
+    if((index + 1)*2 < end__heap)bigHeap(arr, (index + 1)*2);
+    if((index + 1)*2 + 1 < end__heap)bigHeap(arr, (index + 1)*2 + 1);
     swap_big(arr, index);
-    if(index*2 + 1 < end__heap)bigHeap(arr, index*2 + 1);
-    if(index*2 + 2 < end__heap)bigHeap(arr, index*2 + 2);
+    if((index + 1)*2 < end__heap)bigHeap(arr, (index + 1)*2);
+    if((index + 1)*2 + 1 < end__heap)bigHeap(arr, (index + 1)*2 + 1);
 }
 
 void smallHeap(int *arr, int index){
     __small = 1;
-    if(index*2 + 1 < end__heap)smallHeap(arr, index*2 + 1);
-    if(index*2 + 2 < end__heap)smallHeap(arr, index*2 + 2);
+    if((index + 1)*2 < end__heap)smallHeap(arr, (index + 1)*2);
+    if((index + 1)*2 + 1 < end__heap)smallHeap(arr, (index + 1)*2 + 1);
     swap_small(arr, index);
-    if(index*2 + 1 < end__heap)smallHeap(arr, index*2 + 1);
-    if(index*2 + 2 < end__heap)smallHeap(arr, index*2 + 2);
+    if((index + 1)*2 < end__heap)smallHeap(arr, (index + 1)*2);
+    if((index + 1)*2 + 1 < end__heap)smallHeap(arr, (index + 1)*2 + 1);
 }
 
 void insertHeap(int *arr, int num){
@@ -64,6 +64,5 @@ int *build_heap(int *arr, int len){
     end__heap = ( MAX > len ? len : MAX);
     int* heap=(int*)malloc(sizeof(int)*MAX);
     memcpy(heap, arr, sizeof(int)*end__heap);
-    bigHeap(heap, 0);
     return heap;
 }
