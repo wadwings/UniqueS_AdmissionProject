@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<time.h>
 int main(){
-       srand(time(NULL));
+    srand(time(NULL));
     int x, y, index;
     index = rand()%100 + 20;
     int* num = (int*)malloc(sizeof(int)*index);
