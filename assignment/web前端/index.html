@@ -2,31 +2,39 @@
 <html>
 
 <head>
+    <script src="index.js"></script>
     <link rel="stylesheet" href="index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
     <title>Rockstar Games</title>
 </head>
 
-<body>
-    <header class="h_background">
+<body onresize="change_width()" onload="ready()">
+    <header class="h_background" >
         <nav id="head">
-            <a class="sidebar">
-                    <spam></spam>
-                    <spam></spam>
-                    <spam></spam>
+            <a class="sidebar" href="#">
+                    <spam class="spam1"></spam>
+                    <spam class="spam2"></spam>
+                    <spam class="spam3"></spam>
             </a>
-            <a class="Rockstar">
+            <div class="space"></div>
+            <a class="Rockstar" href="#">
             </a>
-            <a class="figure">
+            <div class="space"></div>
+            <a class="figure" href="#">
             </a>
         </nav>
     </header>
-    <main>
+    <main id="main">
         <section class="lunbo">
-            <a>
-
+            <a class="video" href="#">
+                <div class="img-layer">
+                    <img class="lunboimg z-1" src="https://videos-rockstargames-com.akamaized.net/screencaps/12135/_global/layers/1.jpg">
+                    <img class="lunboimg z-2" src="https://videos-rockstargames-com.akamaized.net/screencaps/12135/_global/layers/2.png">
+                    <img class="lunboimg z-3" src="https://videos-rockstargames-com.akamaized.net/screencaps/12135/_global/layers/3.png">
+                    <div class="videobutton">RED DEAD ONLINE:MOONSHINERS<button id="button1" style="float:right">WATCH NOW</button></div>
+                </div>
             </a>
-            <a><p></p><button></button></a>
+            <a></a>
         </section>
         <section class="NEWSWIRE">
             <p></p>
@@ -94,7 +102,6 @@
         <a></a>
         <a></a>
     </login>
-    <script src="index.js"></script>
 </body>
 
 </html>
