@@ -82,11 +82,14 @@ body{
     position:relative;
     max-width: 1420px;
     margin: 0 auto;
+    padding: 0 23.4px;
+    text-align: center;
 }
 
 .lunbo{
     max-width: 1420px;
-    width: 100%;
+    width: 100vw;
+    margin: 0 -23.4px 58.5px -23.4px;
 }
 
 .lunboimg{
@@ -114,17 +117,27 @@ body{
 .img-layer{
     position:relative;
 }
+
+.video{
+    color:white;
+    text-decoration: none;
+}
 .lunbotext{
     margin:0;
     background-color: black;
-    color:white;
 }
 
 .videobutton{
-    padding: 9px 0 9px 20px;
-    height: 22px;
+    height: 40px;
     background: black;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 15px 0;
+}
+
+.videobutton h3{
+    margin: 0 30px;
 }
 .videobutton button{
     padding:11.7px 23.4px;
@@ -132,9 +145,94 @@ body{
     background: #fcaf17;
     border: 0;
     font:400 15.6px Arial;
+    cursor: pointer;
+    outline:none;
 }
 
 @font-face {
 	font-family:cos1;
 	src: url('fonts/fontfz.ttf');
+}
+
+.control{
+    text-align: center;
+}
+
+.control button{
+    height: 11px;
+    width: 11px;
+    margin:0 0 0 15px;
+    background: black;
+    border: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    outline:none;
+}
+
+.To1{
+    background: #fcaf17!important;
+}
+
+.NEWSWIRE{
+    font-size:2.1em;
+    padding: 0 0 2px 0;
+    border-bottom: 6px solid black;
+    margin: 0 0 29px 0;
+}
+.NEWSWIRE a{
+
+}
+.new1{
+    width:100%;
+    position:relative;
+}
+.news{
+    padding:14.625px;
+}
+
+.news h1{
+    font-size:1.8em;
+    width:100%;
+}
+.grid{
+    text-decoration: none;
+    color: black;
+    display: block;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.p-0{
+    margin:0;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0px, 1fr));
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+    margin: 0 0 35px 0;
+}
+
+.grid-1{
+    grid-column: 1/-1;
+}
+.grid-2{
+    grid-column: span 3;
+}
+.grid-3{
+    grid-column: span 2;
+}
+
+.view{
+    display:inline-block;
+    transition: 0.2s;
+}
+
+.view_background{
+    width:100%;
+    height: 4px;
+    background: #fcaf17;
+}
+
+.view:hover{
+    background: height #fcaf17;   
 }
