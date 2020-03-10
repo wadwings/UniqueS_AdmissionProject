@@ -1,10 +1,10 @@
-
+verse = 1
 function change_width() {
     winWidth = document.getElementsByClassName("h_background")[0].clientWidth
     var space=document.getElementsByClassName('space')
-    space[0].style.width = (winWidth - 260)/2 + "px"
+    space[0].style.width = 'calc((' + (winWidth - 120) + 'px - 6rem ) / 2)'
     space[0].style.height = 60 + "px"
-    space[1].style.width = (winWidth - 260)/2 + "px"
+    space[1].style.width = 'calc((' + (winWidth - 120) + 'px - 6rem ) / 2)'
     space[1].style.height = 60 + "px"
     var button=document.getElementsByClassName("button1");
     button[0].style.width = button.clientHeight*3.7 + "px"
@@ -31,8 +31,24 @@ function change_width() {
         i[1].setAttribute('style','grid-column: span 4!important;');
         i[2].setAttribute('style','grid-column: span 4!important;');
         i[3].setAttribute('style','grid-column: span 4!important;');
+        var i = document.getElementsByClassName('business')[0];
+        i.className = 'business line';
+        var i = document.getElementsByClassName('space1');
+        i[0].className = 'space1 m-39';
+        i[1].className = 'space1 m-39';
+        var foot = document.getElementsByClassName('videobutton');
+        var button = document.getElementsByClassName('button1');
+        var videotitle = document.getElementsByClassName('videotitle');
+        for(var x = 0; x < 3; x++){
+            foot[x].className = 'videobutton line';
+            button[x].style.width = '100%';
+            videotitle[x].style.padding = '1.5rem';
+        }
     }
     else if (winWidth < 1200){
+        var i = document.getElementsByClassName('grid-2');
+        i[0].setAttribute('style','grid-column: span 3!important;');
+        i[1].setAttribute('style','grid-column: span 3!important;');
         var i = document.getElementsByClassName('grid-3');
         i[0].setAttribute('style','grid-column: span 3!important;');
         i[1].setAttribute('style','grid-column: span 3!important;');
@@ -42,7 +58,19 @@ function change_width() {
         i[1].setAttribute('style','grid-column: span 2!important;');
         i[2].setAttribute('style','grid-column: span 2!important;');
         i[3].setAttribute('style','grid-column: span 2!important;');
-    }
+        var i = document.getElementsByClassName('business')[0];
+        i.className = 'business';
+        var i = document.getElementsByClassName('space1');
+        i[0].className = 'space1';
+        i[1].className = 'space1';
+        var foot = document.getElementsByClassName('videobutton');
+        var button = document.getElementsByClassName('button1');
+        var videotitle = document.getElementsByClassName('videotitle');
+        for(var x = 0; x < 3; x++){
+            foot[x].className = 'videobutton';
+            button[x].style.width = 'auto';
+            videotitle[x].style.padding = '0';
+        }}
     else{
         var i = document.getElementsByClassName('grid-2');
         i[0].setAttribute('style','grid-column: span 3!important;');
@@ -56,7 +84,21 @@ function change_width() {
         i[1].setAttribute('style','grid-column: span 1!important;');
         i[2].setAttribute('style','grid-column: span 1!important;');
         i[3].setAttribute('style','grid-column: span 1!important;');
+        var i = document.getElementsByClassName('business')[0];
+        i.className = 'business';
+        var i = document.getElementsByClassName('space1');
+        i[0].className = 'space1';
+        i[1].className = 'space1';
     }
+    if (winWidth >= 1440 && winWidth <= 1440 + 25){
+        document.getElementById('lunbo' + verse).style.left = winWidth - 1440 + 'px';
+    }
+    else if(winWidth >= 1440 + 25)
+        document.getElementById('lunbo' + verse).style.left = 25 + 'px';
+    else
+    document.getElementById('lunbo' + verse).style.left = 0;
+
+
     
 }
 function ready(){
@@ -104,6 +146,8 @@ function Go1(){
     document.getElementsByClassName('To1')[0].setAttribute('style', 'background:#fcaf17!important')
     document.getElementsByClassName('To2')[0].setAttribute('style', 'background:#000!important')
     document.getElementsByClassName('To3')[0].setAttribute('style', 'background:#000!important')
+    verse = 1
+    change_width()
 }
 function Go2(){
     var v1 = document.getElementById('lunbo1');
@@ -118,6 +162,8 @@ function Go2(){
     document.getElementsByClassName('To1')[0].setAttribute('style', 'background:#000!important')
     document.getElementsByClassName('To2')[0].setAttribute('style', 'background:#fcaf17!important')
     document.getElementsByClassName('To3')[0].setAttribute('style', 'background:#000!important')
+    verse = 2
+    change_width()
 }
 function Go3(){
     var v1 = document.getElementById('lunbo1');
@@ -132,4 +178,6 @@ function Go3(){
     document.getElementsByClassName('To1')[0].setAttribute('style', 'background:#000!important')
     document.getElementsByClassName('To2')[0].setAttribute('style', 'background:#000!important')
     document.getElementsByClassName('To3')[0].setAttribute('style', 'background:#fcaf17!important')
+    verse = 3
+    change_width()
 }
