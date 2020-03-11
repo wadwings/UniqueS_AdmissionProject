@@ -11,7 +11,7 @@
 <body onresize="change_width()" onload="ready()">
     <header class="h_background">
         <nav id="head">
-            <a class="sidebar" href="#" onclick="aside()">
+            <a class="sidebar" onclick="aside()">
                     <spam class="spam1"></spam>
                     <spam class="spam2"></spam>
                     <spam class="spam3"></spam>
@@ -20,7 +20,7 @@
             <a class="Rockstar" href="#">
             </a>
             <div class="space"></div>
-            <a class="figure" href="#">
+            <a class="figure" onclick="login()">
             </a>
         </nav>
     </header>
@@ -28,23 +28,23 @@
         <section class="lunbo">
             <a class="video" href="#">
                 <div class="img-layer" id="lunbo1">
-                    <img class="lunboimg z-1" src="https://videos-rockstargames-com.akamaized.net/screencaps/12135/_global/layers/1.jpg">
-                    <img class="lunboimg z-2" src="https://videos-rockstargames-com.akamaized.net/screencaps/12135/_global/layers/2.png">
-                    <img class="lunboimg z-3" src="https://videos-rockstargames-com.akamaized.net/screencaps/12135/_global/layers/3.png">
+                    <img src="pic/blank.png" class="lunboimg z-1" data-src="pic/1-1.jpg">
+                    <img src="pic/blank.png" class="lunboimg z-2" data-src="pic/1-2.png">
+                    <img src="pic/blank.png" class="lunboimg z-3" data-src="pic/1-3.png">
                     <footer class="videobutton"><h3 class="videotitle">RED DEAD ONLINE: MOONSHINERS</h3><button class="button1" style="float:right">WATCH NOW</button></footer>
                 </div>
             </a>
             <a class="video" href="#" >
                 <div class="img-layer hidden" style="transform:translateX(100%)" id="lunbo2">
-                    <img class="lunboimg z-1" src="https://videos-rockstargames-com.akamaized.net/screencaps/12134/_global/layers/1.jpg">
-                    <img class="lunboimg z-2" src="pic/2.png">
-                    <img class="lunboimg z-3" src="https://videos-rockstargames-com.akamaized.net/screencaps/12134/_global/layers/3.png">
+                    <img src="pic/blank.png" class="lunboimg z-1" data-src="pic/2-1.jpg">
+                    <img src="pic/blank.png" class="lunboimg z-2" data-src="pic/2-2.png">
+                    <img src="pic/blank.png" class="lunboimg z-3" data-src="pic/2-3.png">
                     <footer class="videobutton"><h3 class="videotitle">Grand Theft Auto Online: The Diamond Casino Heist</h3><button class="button1" style="float:right">WATCH NOW</button></footer>
                 </div>
             </a>
             <a class="video" href="#">
                 <div class="img-layer hidden" style="transform:translateX(200%)" id="lunbo3">
-                    <img class="lunboimg z-1" src="https://videos-rockstargames-com.akamaized.net/screencaps/12133/en_us/1280.jpg">
+                    <img src="pic/blank.png" class="lunboimg z-1" data-src="pic/3-1.jpg">
                     <footer class="videobutton"><h3 class="videotitle">Red Dead Redemption 2: PC Launch Trailer</h3><button class="button1" style="float:right">WATCH NOW</button></footer>
                 </div>
             </a>
@@ -54,67 +54,67 @@
         <section class="container">
             <a class="grid grid-1" href="#">
                 <div class="img-layer">
-                    <img style="box-shadow: 3px 0 6px 0 rgba(0, 0, 0, 0.2);"  class="lunboimg z-1" src="https://media.rockstargames.com/rockstargames-newsite/uploads/71281eb2bd6fff55e919000300d435a9a718e5d9.jpg">
+                    <img src="pic/blank.png"  class="lunboimg z-1" data-src="pic/4-1.jpg">
                     <footer class="news">
                         <h3 class="p-0">
-                        <img style="width:15px" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2015%2014.88%22%3E%3Ctitle%3EAsset%206%3C%2Ftitle%3E%3Cstyle%3E%23Layer_1-2%7Bfill%3A%23000000%3B%7D%3C%2Fstyle%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22Layer_1-2%22%20data-name%3D%22Layer%201%22%3E%3Cpath%20d%3D%22M15%2C5.61H9.38L8.49%2C0%2C5.19%2C5.57H0L3.21%2C9%2C.45%2C14.88l5.9-3.5%2C4.4%2C3.38-.82-5.6Z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E%0A"></img>
+                        <img src="pic/blank.png" style="width:15px" data-src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2015%2014.88%22%3E%3Ctitle%3EAsset%206%3C%2Ftitle%3E%3Cstyle%3E%23Layer_1-2%7Bfill%3A%23000000%3B%7D%3C%2Fstyle%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22Layer_1-2%22%20data-name%3D%22Layer%201%22%3E%3Cpath%20d%3D%22M15%2C5.61H9.38L8.49%2C0%2C5.19%2C5.57H0L3.21%2C9%2C.45%2C14.88l5.9-3.5%2C4.4%2C3.38-.82-5.6Z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E%0A"></img>
                         GTA ONLINE</h3>
-                        <h1 class="p-0">Open Wheel Racing Now Available for GTA Online</h1>
+                        <h1 class="p-0" style="transition: color 0.4s;">Open Wheel Racing Now Available for GTA Online</h1>
                     </footer>
                 </div>
             </a>
             <a class="grid grid-2" href="#">
                 <div class="img-layer">
-                    <img class="lunboimg z-1" src="https://media.rockstargames.com/rockstargames-newsite/uploads/f32cd125070cfba2a331cd7ad6a2f49cb321ab74.jpg">
+                    <img src="pic/blank.png" class="lunboimg z-1" data-src="pic/4-2.jpg">
                     <footer class="news">
                         <h3 class="p-0">
-                        <img style="width:15px" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2015%2014.88%22%3E%3Ctitle%3EAsset%206%3C%2Ftitle%3E%3Cstyle%3E%23Layer_1-2%7Bfill%3A%23000000%3B%7D%3C%2Fstyle%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22Layer_1-2%22%20data-name%3D%22Layer%201%22%3E%3Cpath%20d%3D%22M15%2C5.61H9.38L8.49%2C0%2C5.19%2C5.57H0L3.21%2C9%2C.45%2C14.88l5.9-3.5%2C4.4%2C3.38-.82-5.6Z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E%0A">
+                        <img src="pic/blank.png" style="width:15px" data-src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2015%2014.88%22%3E%3Ctitle%3EAsset%206%3C%2Ftitle%3E%3Cstyle%3E%23Layer_1-2%7Bfill%3A%23000000%3B%7D%3C%2Fstyle%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22Layer_1-2%22%20data-name%3D%22Layer%201%22%3E%3Cpath%20d%3D%22M15%2C5.61H9.38L8.49%2C0%2C5.19%2C5.57H0L3.21%2C9%2C.45%2C14.88l5.9-3.5%2C4.4%2C3.38-.82-5.6Z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E%0A">
                         GTA ONLINE</h3>
-                        <h4 class="p-0">Nagasaki Stryder Now Available in GTA Online</h4>
+                        <h4 class="p-0" style="transition: color 0.4s;">Nagasaki Stryder Now Available in GTA Online</h4>
                     </footer>
                 </div>
             </a>
             <a class="grid grid-2" href="#">
                 <div class="img-layer">
-                    <img class="lunboimg z-1" src="https://media.rockstargames.com/rockstargames-newsite/uploads/484de0460a8b595629b521e5ebbd1e3832498b49.jpg">
+                    <img src="pic/blank.png" class="lunboimg z-1" data-src="pic/4-3.jpg">
                     <footer class="news">
                         <h3 class="p-0">
-                        <img style="width:15px" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2015%2014.88%22%3E%3Ctitle%3EAsset%206%3C%2Ftitle%3E%3Cstyle%3E%23Layer_1-2%7Bfill%3A%23000000%3B%7D%3C%2Fstyle%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22Layer_1-2%22%20data-name%3D%22Layer%201%22%3E%3Cpath%20d%3D%22M15%2C5.61H9.38L8.49%2C0%2C5.19%2C5.57H0L3.21%2C9%2C.45%2C14.88l5.9-3.5%2C4.4%2C3.38-.82-5.6Z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E%0A">
+                        <img src="pic/blank.png" style="width:15px" data-src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2015%2014.88%22%3E%3Ctitle%3EAsset%206%3C%2Ftitle%3E%3Cstyle%3E%23Layer_1-2%7Bfill%3A%23000000%3B%7D%3C%2Fstyle%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22Layer_1-2%22%20data-name%3D%22Layer%201%22%3E%3Cpath%20d%3D%22M15%2C5.61H9.38L8.49%2C0%2C5.19%2C5.57H0L3.21%2C9%2C.45%2C14.88l5.9-3.5%2C4.4%2C3.38-.82-5.6Z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E%0A">
                         GTA ONLINE</h3>
-                        <h4 class="p-0">Red Dead Online Challenges, Bonuses and Discounts</h4>
+                        <h4 class="p-0" style="transition: color 0.4s;">Red Dead Online Challenges, Bonuses and Discounts</h4>
                     </footer>
                 </div>
             </a>
             <a class="grid grid-3" href="#">
                 <div class="img-layer">
-                    <img class="lunboimg z-1" src="https://media.rockstargames.com/rockstargames-newsite/uploads/91ff14c01e43570f696cc0276314c18b53bb39d1.jpg">
+                    <img src="pic/blank.png" class="lunboimg z-1" data-src="pic/4-4.jpg">
                     <footer class="news">
                         <h3 class="p-0">
-                        <img style="width:15px" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2015%2014.88%22%3E%3Ctitle%3EAsset%206%3C%2Ftitle%3E%3Cstyle%3E%23Layer_1-2%7Bfill%3A%23000000%3B%7D%3C%2Fstyle%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22Layer_1-2%22%20data-name%3D%22Layer%201%22%3E%3Cpath%20d%3D%22M15%2C5.61H9.38L8.49%2C0%2C5.19%2C5.57H0L3.21%2C9%2C.45%2C14.88l5.9-3.5%2C4.4%2C3.38-.82-5.6Z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E%0A">
+                        <img src="pic/blank.png" style="width:15px" data-src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2015%2014.88%22%3E%3Ctitle%3EAsset%206%3C%2Ftitle%3E%3Cstyle%3E%23Layer_1-2%7Bfill%3A%23000000%3B%7D%3C%2Fstyle%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22Layer_1-2%22%20data-name%3D%22Layer%201%22%3E%3Cpath%20d%3D%22M15%2C5.61H9.38L8.49%2C0%2C5.19%2C5.57H0L3.21%2C9%2C.45%2C14.88l5.9-3.5%2C4.4%2C3.38-.82-5.6Z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E%0A">
                         GTA ONLINE</h3>
-                        <h4 class="p-0">Double Rewards on Gunrunning Sell Missions and Bunker Series</h4>
+                        <h4 class="p-0" style="transition: color 0.4s;">Double Rewards on Gunrunning Sell Missions and Bunker Series</h4>
                     </footer>
                 </div>
             </a>
             <a class="grid grid-3" href="#">
                 <div class="img-layer">
-                    <img class="lunboimg z-1" src="https://media.rockstargames.com/rockstargames-newsite/uploads/531c7a94a33bf81ce93a0f0b316f034b1e883a96.jpg">
+                    <img src="pic/blank.png" class="lunboimg z-1" data-src="pic/4-5.jpg">
                     <footer class="news">
                         <h3 class="p-0">
-                        <img style="width:15px" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2015%2014.88%22%3E%3Ctitle%3EAsset%206%3C%2Ftitle%3E%3Cstyle%3E%23Layer_1-2%7Bfill%3A%23000000%3B%7D%3C%2Fstyle%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22Layer_1-2%22%20data-name%3D%22Layer%201%22%3E%3Cpath%20d%3D%22M15%2C5.61H9.38L8.49%2C0%2C5.19%2C5.57H0L3.21%2C9%2C.45%2C14.88l5.9-3.5%2C4.4%2C3.38-.82-5.6Z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E%0A">
+                        <img src="pic/blank.png" style="width:15px" data-src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2015%2014.88%22%3E%3Ctitle%3EAsset%206%3C%2Ftitle%3E%3Cstyle%3E%23Layer_1-2%7Bfill%3A%23000000%3B%7D%3C%2Fstyle%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22Layer_1-2%22%20data-name%3D%22Layer%201%22%3E%3Cpath%20d%3D%22M15%2C5.61H9.38L8.49%2C0%2C5.19%2C5.57H0L3.21%2C9%2C.45%2C14.88l5.9-3.5%2C4.4%2C3.38-.82-5.6Z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E%0A">
                         GAME TIPS</h3>
-                        <h4 class="p-0">Open Wheel Racing Tips and Tactics</h4>
+                        <h4 class="p-0" style="transition: color 0.4s;">Open Wheel Racing Tips and Tactics</h4>
                     </footer>
                 </div>
             </a>
             <a class="grid grid-3" href="#">
                 <div class="img-layer">
-                    <img class="lunboimg z-1" src="https://media.rockstargames.com/rockstargames-newsite/uploads/80c6b6d76460453cda3904836f4dbdbbbbf95ff7.jpg">
+                    <img src="pic/blank.png" class="lunboimg z-1" data-src="pic/4-6.jpg">
                     <footer class="news">
                         <h3 class="p-0">
-                        <img style="width:15px" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2015%2014.88%22%3E%3Ctitle%3EAsset%206%3C%2Ftitle%3E%3Cstyle%3E%23Layer_1-2%7Bfill%3A%23000000%3B%7D%3C%2Fstyle%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22Layer_1-2%22%20data-name%3D%22Layer%201%22%3E%3Cpath%20d%3D%22M15%2C5.61H9.38L8.49%2C0%2C5.19%2C5.57H0L3.21%2C9%2C.45%2C14.88l5.9-3.5%2C4.4%2C3.38-.82-5.6Z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E%0A">
+                        <img src="pic/blank.png" style="width:15px" data-src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2015%2014.88%22%3E%3Ctitle%3EAsset%206%3C%2Ftitle%3E%3Cstyle%3E%23Layer_1-2%7Bfill%3A%23000000%3B%7D%3C%2Fstyle%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22Layer_1-2%22%20data-name%3D%22Layer%201%22%3E%3Cpath%20d%3D%22M15%2C5.61H9.38L8.49%2C0%2C5.19%2C5.57H0L3.21%2C9%2C.45%2C14.88l5.9-3.5%2C4.4%2C3.38-.82-5.6Z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E%0A">
                         WAREHOUSE</h3>
-                        <h4 class="p-0">Red Dead Redemption 2 Wildlife Calendar</h4>
+                        <h4 class="p-0" style="transition: color 0.4s;">Red Dead Redemption 2 Wildlife Calendar</h4>
                     </footer>
                 </div>
             </a>
@@ -123,30 +123,30 @@
         <h2 class="NEWSWIRE">FEATURED GAMES</h2>
         <section class="FEATURED_GAMES">
             <a class="games" href="#"><div class="img-layer">
-                <img class="lunboimg z-1" src="https://www.rockstargames.com/rockstar_games/games/img/fob/640/reddeadredemption2.jpg">
+                <img src="pic/blank.png" class="lunboimg z-1" data-src="pic/5-1.jpg">
             </div></a>
             <a class="games" href="#"><div class="img-layer">
-                <img class="lunboimg z-1" src="https://www.rockstargames.com/rockstar_games/games/img/fob/640/V.jpg">
+                <img src="pic/blank.png" class="lunboimg z-1" data-src="pic/5-2.jpg">
             </div></a>
             <a class="games" href="#"><div class="img-layer">
-                <img class="lunboimg z-1" src="https://www.rockstargames.com/rockstar_games/games/img/fob/640/lanoire.jpg">
+                <img src="pic/blank.png" class="lunboimg z-1" data-src="pic/5-3.jpg">
             </div></a>
             <a class="games" href="#"><div class="img-layer">
-                <img class="lunboimg z-1" src="https://www.rockstargames.com/rockstar_games/games/img/fob/640/bully.jpg">
+                <img src="pic/blank.png" class="lunboimg z-1" data-src="pic/5-4.jpg">
             </div></a>
         </section>
         <div style="text-align:center"><a class="view" href="#">View More</a></div>
     </main>
     <footer class="business">
-        <p class="p-0 footer">Rockstar&nbsp;Games</p>
+        <p class="p-0 Xqxa">Rockstar&nbsp;Games</p>
         <div class="space1"></div>
-        <p class="p-0 footer" id="address">New&nbsp;York&nbsp;&nbsp;London&nbsp;&nbsp;Paris&nbsp;&nbsp;Bogota</p>
+        <p class="p-0 Xqxa" id="address">New&nbsp;York&nbsp;&nbsp;London&nbsp;&nbsp;Paris&nbsp;&nbsp;Bogota</p>
         <div class="space1"></div>
-        <p class="p-0 footer" id="year">MCMXCVIII</p>
+        <p class="p-0 Xqxa" id="year">MCMXCVIII</p>
     </footer>
     <aside id="aside">
         <div style="max-width: 1420px; margin:0 auto">
-        <div class="main" style="padding: 89.250px 24.25px 0 24.25px">
+        <div class="main" style="padding: calc(60px + 1.5rem) 1.5rem 0 1.5rem">
             <form class="search">
                 <button type="submit"></button>
                 <input placeholder="Search Rockstar Games">
@@ -166,10 +166,10 @@
         <footer class="f1">
             <div style="max-width:1420px; margin:0 auto;height:100%;">
                 <div class="f2">
-                    <div style="position:relative">
+                    <div class="footer">
             <nav class="lang" onclick="setting()">
                 <img style="width:18px" src="data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%20%20%20%20%3C!--%20Generator%3A%20Sketch%2062%20(91390)%20-%20https%3A%2F%2Fsketch.com%20--%3E%0A%20%20%20%20%3Ctitle%3Eicon-language%3C%2Ftitle%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%0A%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3Cpolygon%20id%3D%22path-1%22%20points%3D%220%200%2024%200%2024%2024%200%2024%22%3E%3C%2Fpolygon%3E%0A%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%3Cg%20id%3D%22Homepage-Insitu%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22002_HP_NAVCONCEPT_opt1_Expanded_XL%22%20transform%3D%22translate(-163.000000%2C%20-1217.000000)%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cg%20id%3D%22language-selector%22%20transform%3D%22translate(163.000000%2C%201208.000000)%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cg%20id%3D%22language%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cg%20id%3D%22icon-language%22%20transform%3D%22translate(0.000000%2C%209.000000)%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cmask%20id%3D%22mask-2%22%20fill%3D%22white%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cuse%20xlink%3Ahref%3D%22%23path-1%22%3E%3C%2Fuse%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fmask%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cg%20id%3D%22Clip-2%22%3E%3C%2Fg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M17.8336%2C14.7712%20C17.9376%2C13.8816%2018%2C12.9568%2018%2C12%20C18%2C11.0448%2017.9376%2C10.12%2017.8336%2C9.2288%20C19.2048%2C9.0576%2020.5312%2C8.832%2021.7984%2C8.5472%20C22.1808%2C9.6304%2022.4%2C10.7888%2022.4%2C12%20C22.4%2C13.2128%2022.1808%2C14.3696%2021.7984%2C15.4528%20C20.5312%2C15.168%2019.2048%2C14.944%2017.8336%2C14.7712%20Z%20M15.4576%2C21.7968%20C16.4112%2C20.448%2017.1568%2C18.5632%2017.5856%2C16.3552%20C18.8144%2C16.5072%2020.0032%2C16.7056%2021.144%2C16.952%20C19.9232%2C19.1968%2017.896%2C20.9328%2015.4576%2C21.7968%20Z%20M2.856%2C16.952%20C3.9984%2C16.7056%205.1872%2C16.5072%206.4144%2C16.3552%20C6.8448%2C18.5632%207.5904%2C20.448%208.5424%2C21.7968%20C6.104%2C20.9328%204.0768%2C19.1968%202.856%2C16.952%20Z%20M1.6%2C12%20C1.6%2C10.7888%201.8192%2C9.6304%202.2016%2C8.5472%20C3.4688%2C8.832%204.7952%2C9.0576%206.1664%2C9.2288%20C6.0624%2C10.12%206%2C11.0448%206%2C12%20C6%2C12.9568%206.0624%2C13.8816%206.1664%2C14.7712%20C4.7952%2C14.944%203.4688%2C15.168%202.2016%2C15.4528%20C1.8192%2C14.3696%201.6%2C13.2128%201.6%2C12%20Z%20M8.5424%2C2.2032%20C7.5904%2C3.552%206.8448%2C5.4384%206.4144%2C7.6448%20C5.1872%2C7.4928%203.9984%2C7.2944%202.856%2C7.0496%20C4.0768%2C4.8032%206.104%2C3.0672%208.5424%2C2.2032%20Z%20M12%2C1.6%20C13.552%2C1.6%2015.2384%2C4.0816%2015.9936%2C7.8176%20C14.6928%2C7.9328%2013.3616%2C8%2012%2C8%20C10.6384%2C8%209.3072%2C7.9328%208.0064%2C7.8176%20C8.7616%2C4.0816%2010.4496%2C1.6%2012%2C1.6%20Z%20M12%2C22.4%20C10.4496%2C22.4%208.7616%2C19.9184%208.0064%2C16.1824%20C9.3072%2C16.0688%2010.6384%2C16%2012%2C16%20C13.3616%2C16%2014.6928%2C16.0688%2015.9936%2C16.1824%20C15.2384%2C19.9184%2013.552%2C22.4%2012%2C22.4%20Z%20M16.4%2C12%20C16.4%2C12.9056%2016.3408%2C13.7712%2016.2416%2C14.5984%20C14.8624%2C14.4752%2013.4496%2C14.4%2012%2C14.4%20C10.5504%2C14.4%209.1376%2C14.4752%207.7584%2C14.5984%20C7.6592%2C13.7712%207.6%2C12.9056%207.6%2C12%20C7.6%2C11.0944%207.6592%2C10.2288%207.7584%2C9.4016%20C9.1376%2C9.5248%2010.5504%2C9.6%2012%2C9.6%20C13.4496%2C9.6%2014.8624%2C9.5248%2016.2416%2C9.4016%20C16.3408%2C10.2288%2016.4%2C11.0944%2016.4%2C12%20Z%20M21.144%2C7.0496%20C20.0032%2C7.2944%2018.8144%2C7.4928%2017.5856%2C7.6448%20C17.1568%2C5.4384%2016.4112%2C3.552%2015.4576%2C2.2032%20C17.896%2C3.0672%2019.9232%2C4.8032%2021.144%2C7.0496%20Z%20M23.3648%2C8.1696%20C23.1904%2C7.6544%2022.9808%2C7.1568%2022.7424%2C6.6752%20C20.7792%2C2.7232%2016.712%2C0%2012%2C0%20C7.288%2C0%203.2208%2C2.7232%201.2576%2C6.6752%20C1.0192%2C7.1568%200.8096%2C7.6544%200.6352%2C8.1696%20C0.2304%2C9.3744%200%2C10.6592%200%2C12%20C0%2C13.3408%200.2304%2C14.6272%200.6352%2C15.8304%20C0.8096%2C16.3456%201.0192%2C16.8432%201.2576%2C17.3248%20C3.2208%2C21.2768%207.288%2C24%2012%2C24%20C16.712%2C24%2020.7792%2C21.2768%2022.7424%2C17.3248%20C22.9808%2C16.8432%2023.1904%2C16.3456%2023.3648%2C15.8304%20C23.7696%2C14.6272%2024%2C13.3408%2024%2C12%20C24%2C10.6592%2023.7696%2C9.3744%2023.3648%2C8.1696%20L23.3648%2C8.1696%20Z%22%20id%3D%22Fill-1%22%20fill%3D%22%23FCAF17%22%20mask%3D%22url(%23mask-2)%22%3E%3C%2Fpath%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E">
-                <p style="font-size:1.2em; display: inline; border-bottom: 1px solid #fcaf17;">
+                <p style="display: inline; border-bottom: 1px solid #fcaf17;">
                     English&nbsp;&nbsp;
                     <img id="r1" style="transform: rotate(0deg); transition: transform 0.3s" src="data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%0A%3Csvg%20width%3D%2213px%22%20height%3D%228px%22%20viewBox%3D%220%200%2013%208%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%20%20%20%20%3C!--%20Generator%3A%20Sketch%2062%20(91390)%20-%20https%3A%2F%2Fsketch.com%20--%3E%0A%20%20%20%20%3Ctitle%3Eicon%2Fdropdown%3C%2Ftitle%3E%0A%20%20%20%20%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%0A%20%20%20%20%3Cg%20id%3D%22Homepage-Insitu%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22002_HP_NAVCONCEPT_opt1_Expanded_XL%22%20transform%3D%22translate(-322.000000%2C%20-1224.000000)%22%20fill%3D%22%23FCAF17%22%20fill-rule%3D%22nonzero%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cg%20id%3D%22language-selector%22%20transform%3D%22translate(163.000000%2C%201208.000000)%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cg%20id%3D%22language%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cg%20id%3D%22icon%2Fdropdown%22%20transform%3D%22translate(159.000000%2C%2016.000000)%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cg%20id%3D%22DROPDOWN%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpolygon%20id%3D%22Path%22%20points%3D%227.86%206.415%2012.825%201.445%2011.38%200%206.415%204.965%201.445%200%200%201.445%204.965%206.415%206.415%207.86%22%3E%3C%2Fpolygon%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A">
                 </p>
@@ -201,9 +201,9 @@
         </div>
         </footer>
     </aside>
-    <login>
-        <a></a>
-        <a></a>
+    <login class="login">
+        <a class="signin cursor">Sign In</a>
+        <a class="join cursor">Join Social Club</a>
     </login>
 </body>
 

@@ -10,9 +10,9 @@ function change_width() {
     button[0].style.width = button.clientHeight*3.7 + "px"
     button[1].style.width = button.clientHeight*3.7 + "px"
     button[2].style.width = button.clientHeight*3.7 + "px"
-    document.getElementsByClassName("business")[0].style.width = (winWidth - 29.5*2) + 'px'
+    document.getElementsByClassName("business")[0].style.width = 'calc(' + winWidth + 'px - 3rem)'
     var footWidth = winWidth;
-    footer = document.getElementsByClassName('footer');
+    footer = document.getElementsByClassName('Xqxa');
     for (var i = 0; i < 3; i++)
         footWidth -= footer[i].clientWidth
     space = document.getElementsByClassName('space1')
@@ -89,15 +89,42 @@ function change_width() {
         var i = document.getElementsByClassName('space1');
         i[0].className = 'space1';
         i[1].className = 'space1';
+        var foot = document.getElementsByClassName('videobutton');
+        var button = document.getElementsByClassName('button1');
+        var videotitle = document.getElementsByClassName('videotitle');
+        for(var x = 0; x < 3; x++){
+            foot[x].className = 'videobutton';
+            button[x].style.width = 'auto';
+            videotitle[x].style.padding = '0';
+        }
     }
     if (winWidth >= 1440 && winWidth <= 1440 + 25){
         document.getElementById('lunbo' + verse).style.left = winWidth - 1440 + 'px';
+        document.getElementsByClassName('control')[0].style.left = winWidth - 1440 + 'px';
     }
-    else if(winWidth >= 1440 + 25)
+    else if(winWidth >= 1440 + 25){
+        document.getElementsByClassName('control')[0].style.left = 25 + 'px';
         document.getElementById('lunbo' + verse).style.left = 25 + 'px';
-    else
-    document.getElementById('lunbo' + verse).style.left = 0;
-
+    }else{
+        document.getElementById('lunbo' + verse).style.left = 0;
+        document.getElementsByClassName('control')[0].style.left = 0;
+    }
+    if(winWidth <= 1024){
+        var f2 = document.getElementsByClassName('f2')[0];
+        f2.className = 'f2 var';
+        var footer = document.getElementsByClassName('footer')[0];
+        footer.className = 'footer m-15';
+        var infor = document.getElementsByClassName('infor')[0];
+        infor.className = 'infor var m-15';
+    }
+    else{
+        var f2 = document.getElementsByClassName('f2')[0];
+        f2.className = 'f2';
+        var footer = document.getElementsByClassName('footer')[0];
+        footer.className = 'footer';
+        var infor = document.getElementsByClassName('infor')[0];
+        infor.className = 'infor';
+    }
 
     
 }
@@ -131,6 +158,11 @@ function aside(){
         spam3.setAttribute('style', 'transition: 0.2s; transform:translateY(200%)')
     else
         spam3.setAttribute('style', 'transition: 0.2s; transform:none');
+    var back = document.getElementsByClassName('h_background')[0];
+    if (back.style.backgroundImage == "none")
+        back.style.backgroundImage = 'linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.rockstargames.com/dist/img/global/2qbg.png")'
+    else
+        back.style.backgroundImage = 'none'
 }
 
 function Go1(){
@@ -180,4 +212,39 @@ function Go3(){
     document.getElementsByClassName('To3')[0].setAttribute('style', 'background:#fcaf17!important')
     verse = 3
     change_width()
+}
+imgs = document.querySelectorAll('img');
+
+function isIn(el) {
+    var bound = el.getBoundingClientRect();
+    var clientHeight = document.documentElement.clientHeight;
+    return bound.top <= clientHeight;
+} 
+
+function check() {
+    imgs = document.querySelectorAll('img');
+    for(var i = 0; i < imgs.length - 8; i++){
+        if(isIn(imgs[i]))
+            loadImg(imgs[i]);
+    }
+}
+function loadImg(el) {
+    el.setAttribute('src', el.getAttribute('data-src'));
+}
+
+function login(){
+    var login = document.getElementsByClassName('login')[0]
+    if(login.style.transform == 'none')
+        login.setAttribute('style', 'transition: 0.2s; transform:translateX(100%)');
+    else
+        login.setAttribute('style', 'transition: 0.2s; transform:none');
+}
+
+window.onload = function () {
+    change_width();
+    check();
+}   
+
+window.onscroll = function () { 
+    check();
 }

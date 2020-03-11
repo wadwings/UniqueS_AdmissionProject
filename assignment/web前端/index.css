@@ -1,5 +1,6 @@
 .h_background{
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.rockstargames.com/dist/img/global/2qbg.png");
+    transition: background-image 0.6s;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pic/head-background.png");
     height: 60px;
     background-repeat: repeat-x;
     background-size: auto 300%;
@@ -28,6 +29,7 @@ a.Rockstar{
     background-position: center;
     width: 36px;
     margin: 12px 1.5rem;
+    cursor: pointer;
 }
 
 
@@ -37,6 +39,7 @@ a.Rockstar{
 }
 
 .sidebar{
+    cursor: pointer;
     width: 24px;
     margin: 12px 1.5rem;
     display: flex;
@@ -94,7 +97,7 @@ body{
 .lunbo{
     max-width: 1420px;
     width: 100vw;
-    margin: 0 -23.4px 58.5px -23.4px;
+    margin: 0 -23.4px 3rem -23.4px;
 }
 
 .lunboimg{
@@ -150,9 +153,11 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 0 15px 0;
+    margin: 0 0 0.75rem 0;
 }
-
+.news h3{
+    font-size:0.92em;
+}
 .videobutton h3{
     margin: 0 30px;
     font-family: HelveticaNeueLTW07-85Heavy;
@@ -176,9 +181,12 @@ body{
 
 .control{
     text-align: center;
+    position: relative;
 }
 
 .control button{
+    max-width:11px;
+    max-height:11px;
     padding: 0;
     height: 0.75rem;
     width: 0.75rem;
@@ -195,7 +203,8 @@ body{
 }
 
 .NEWSWIRE{
-    font-size:2.1em;
+    font-family: HelveticaNeueLTW07-85Heavy;
+    font-size:1.8em;
     padding: 0 0 2px 0;
     border-bottom: 6px solid black;
     margin: 0 0 29px 0;
@@ -209,12 +218,13 @@ body{
 }
 
 .news h1{
-    font-size:1.8em;
+    font-size:1.2em;
     width:100%;
 }
 .grid{
     text-decoration: none;
     color: black;
+    transition: color 1s;
     display: block;
     border: 1px solid rgba(0, 0, 0, 0.15);
     box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.2);
@@ -278,7 +288,7 @@ body{
     grid-template-columns: repeat(4, minmax(0px, 1fr));
     grid-column-gap: 1.5rem;
     grid-row-gap: 1.5rem;
-    margin: 0 0 30px 0;
+    margin: 0 0 1.875rem 0;
 }
 
 .games{
@@ -287,9 +297,9 @@ body{
     box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.2);
 }
 .business{
-    margin: 146.25px 0 0 0;
+    margin: 7.5rem 0 0 0;
     display: flex;
-    padding:29.5px;
+    padding:1.5rem;
     width:100%;
     background:black;
     color:white;
@@ -309,7 +319,7 @@ aside{
     z-index: 50;
     min-height: 100vh;
     overflow-y: auto;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)), url(https://www.rockstargames.com/dist/img/global/nav-bg/2UO5.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)), url(pic/2UO5.jpg);
     background-position: center center;
     background-size:cover;
 }
@@ -317,10 +327,9 @@ aside::-webkit-scrollbar { width: 0 !important }
 .search{
     width:100%;
     display:flex;
-    height:60px;
     background: rgba(0, 0, 0, 0.5);
     border-bottom: 4px solid #fcaf17;
-    margin: 0 0 58.5px 0;
+    margin: 0 0 3rem 0;
 }
 
 .search button{
@@ -340,26 +349,28 @@ aside::-webkit-scrollbar { width: 0 !important }
     width: 100%;
     background-color: transparent;
     border: none;
-    padding: 19.25px 24.375px;
+    padding: 1em 1.25rem;
     color:white;
     font-size:100%;
 }
 .l1{
     display:inline-block;
-    height:44px;
-    margin: 0 0 43.875px ;
+    margin: 0 0 2.25rem 0;
     width:100%;
     font-size:2em;
     color:#fcaf17;
-    transition: color 0.2s;
+    font-weight: bold;
+    transition: color 0.5s;
     text-decoration:none;
+}
+.l1:hover{
+    color: white;
 }
 
 .f1{
     background: rgba(0, 0, 0, 0.8);
     width:100%;
     padding:29.250px 0;
-    height:58.5px;
 }
 
 .f2{
@@ -403,11 +414,15 @@ aside::-webkit-scrollbar { width: 0 !important }
 }
 
 .infor{
-    font-size:1.1em;
     display:flex;
+}
+.m-15{
+    margin:0 0 1.5rem 0;
 }
 
 .infor a{
+    transition: color 0.5s;
+    padding: 0.75rem 0;
     color:#fcaf17;
     text-decoration:none;
     display:block;
@@ -475,32 +490,32 @@ aside::-webkit-scrollbar { width: 0 !important }
 
 @media screen and (min-width: 0) {
     html {
-      font-size: 0.8125em;
+      font-size: 0.8125em!important;
     }
   }
   @media screen and (min-width: 768px) {
     html {
-      font-size: 0.89375em;
+      font-size: 0.89375em!important;
     }
   }
   @media screen and (min-width: 992px) {
     html {
-      font-size: 0.975em;
+      font-size: 0.975em!important;
     }
   }
   @media screen and (min-width: 1200px) {
     html {
-      font-size: 1.05625em;
+      font-size: 1.05625em!important;
     }
   }
   @media screen and (min-width: 1440px) {
     html {
-      font-size: 1.1375em;
+      font-size: 1.1375em!important;
     }
   }
   @media screen and (min-width: 1920px) {
     html {
-      font-size: 1.21875em;
+      font-size: 1.21875em!important;
     }
   }
 
@@ -510,5 +525,62 @@ aside::-webkit-scrollbar { width: 0 !important }
 }
 
 .m-39{
-    min-height: 39px;
+    min-height: 3rem;
+}
+
+.footer{
+    position:relative;
+}
+
+.var{
+    align-items: flex-start!important;
+    flex-flow: column!important;
+}
+
+.var a{
+    margin:0 18px 0 0;
+}
+
+.grid:hover h1{
+    color:#fcaf17;
+}
+.grid:hover h4{
+    color:#fcaf17;
+}
+
+.login{
+    position:fixed;
+    background: white;
+    top:60px;
+    right:0;
+    z-index:1000;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.2);
+    padding: 0.75rem;
+    transform: translateX(100%);
+}
+body{
+    overflow-x: hidden;
+}
+.signin{
+    display:block;
+    padding: 0 0 0.75rem 0;
+    margin: 0 0 0.75rem 0;
+    border-bottom: 1px solid rgba(217, 217, 217, 0.9);
+}
+
+.join{
+    display:block;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+.animi{
+    animation: globalFadeInUp 0.75s;
+}
+
+.infor a:hover{
+    color: white;
 }
